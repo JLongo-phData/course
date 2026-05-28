@@ -1,0 +1,15 @@
+jlongo_dbt_course:
+  outputs:
+    dev:
+      type: snowflake
+      account: PHDATAPARTNER-AWS
+      user: JLONGO@PHDATA.IO
+
+      role: ALL_DE
+      authenticator: externalbrowser
+
+      database: SANDBOX
+      schema: JLONGO
+      threads: 1
+      warehouse: SNOWFLAKE_LEARNING_WH
+  target: dev
