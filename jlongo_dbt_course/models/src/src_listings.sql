@@ -1,5 +1,5 @@
 with raw_listings as (
-    select * FROM SANDBOX.AIRBNB_RAW.RAW_LISTINGS
+    select * FROM {{source('SANDBOX','listings')}}
 )
 select
     id as listing_id,
